@@ -1,0 +1,52 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Android
+android/app/build/
+android/app/release/
+android/.gradle/
+android/build/
+android/local.properties
+*.apk
+*.aab
+
+# iOS
+ios/App/Pods/
+ios/App/build/
+*.xcworkspace
+*.xcuserdata
+
+# Capacitor
+.capacitor/
+android/app/src/main/assets/public/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Ghost.js
+.ghost/

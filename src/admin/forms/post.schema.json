@@ -1,0 +1,15 @@
+{
+  "id": "post",
+  "name": "Post",
+  "version": 1,
+  "fields": [
+    "title",
+    "slug",
+    "body"
+  ],
+  "layout": "single-column",
+  "actions": [
+    "save-draft",
+    "publish"
+  ]
+}

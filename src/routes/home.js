@@ -1,0 +1,1 @@
+export const homeRoute = { path: '/', component: 'BlogHome' };

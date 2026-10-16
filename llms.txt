@@ -1,0 +1,126 @@
+# Todo App - Ghost.js + Capacitor
+
+> A reactive, mobile-first Todo List app built with Ghost.js and deployed to Android using Capacitor
+
+## Quick Facts
+
+- **Framework**: Ghost.js v1.0.0 (reactive JavaScript framework)
+- **Mobile Runtime**: Capacitor (native Android wrapper)
+- **Bundle Size**: 3.5 KB gzipped
+- **Language**: JavaScript (ES6+)
+- **Target Platform**: Android (24+)
+- **License**: MIT
+
+## Project Purpose
+
+This is an experimental Todo List application that demonstrates:
+1. Building reactive web apps with Ghost.js
+2. Deploying Ghost.js apps to mobile using Capacitor
+3. Debugging framework compatibility issues on mobile platforms
+4. Documenting bugs and workarounds for framework maintainers
+
+## Key Features
+
+- Signal-based reactive state management
+- Add, complete, delete, and filter todos
+- Mobile-optimized responsive design
+- Persistent storage across app restarts
+- Lightweight and fast (sub-4KB bundle)
+
+## Technical Stack
+
+```
+Ghost.js (Reactive Framework)
+    ↓
+Capacitor (Native Bridge)
+    ↓
+Android WebView
+    ↓
+Native Android APIs
+```
+
+## Architecture
+
+**Frontend**: Pure Ghost.js with signals for state management
+**Styling**: Inline CSS with gradient backgrounds
+**Bridge**: Capacitor runtime for native capabilities
+**Build**: Ghost.js CLI + Gradle for Android
+
+## Installation & Usage
+
+### Development
+```bash
+npm install
+npm run dev
+```
+
+### Production Build
+```bash
+npm run build
+npx cap sync android
+cd android && ./gradlew assembleDebug
+```
+
+### APK Location
+`android/app/build/outputs/apk/debug/app-debug.apk`
+
+## Known Issues
+
+This project uncovered several Ghost.js bugs:
+- Function-based reactive children fail in bundled builds
+- ES module imports unreliable in Android WebView
+- Function-based props show inconsistent behavior
+
+See [BUGS.md](BUGS.md) for detailed reports.
+
+## Workarounds Applied
+
+Due to framework limitations:
+- Removed reactive function children
+- Implemented manual re-rendering on state changes
+- Used standard script tags (not ES modules)
+- Inlined all CSS
+
+These sacrifice some reactivity but ensure Android compatibility.
+
+## Documentation
+
+- **BUGS.md** - Framework compatibility issues for Ghost.js maintainers
+- **ANALYSIS.md** - Impact analysis of fixes on web features
+- **BUILDING_OWN_CAPACITOR.md** - Guide to building your own mobile bridge framework
+- **AGENTS.md** - How AI agents were used in development
+
+## Learning Value
+
+This project is valuable for:
+- Understanding Ghost.js reactive patterns
+- Learning Capacitor mobile deployment
+- Debugging framework compatibility issues
+- Framework development insights
+
+## Contributing
+
+Contributions welcome! Areas for improvement:
+- iOS support
+- Additional features (due dates, categories)
+- Performance optimizations
+- Ghost.js framework fixes
+
+## Contact
+
+**Author**: Jarir Ahmed
+**GitHub**: [@jarir2020](https://github.com/jarir2020)
+**Repository**: [Todo_App_Ghost.js](https://github.com/jarir2020/Todo_App_Ghost.js)
+
+## Related Projects
+
+- [Ghost.js Framework](https://github.com/ghost-js/ghost-js)
+- [Capacitor](https://capacitorjs.com/)
+
+## Keywords
+
+ghost.js, capacitor, android, mobile, reactive, signals, todo-app, webview, javascript, hybrid-app, mobile-development, framework, web-to-mobile
+
+---
+
+This file follows the llms.txt format for improved discoverability by Large Language Models.
