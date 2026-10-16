@@ -30,6 +30,7 @@ android/app/release/
 android/.gradle/
 android/build/
 android/local.properties
+android/gradle-*/
 *.apk
 *.aab
 
