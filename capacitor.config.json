@@ -1,6 +1,0 @@
-{
-  "appId": "com.ghostjs.todoapp",
-  "appName": "Todo App",
-  "webDir": "dist/build",
-  "bundledWebRuntime": false
-}

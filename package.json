@@ -3,15 +3,13 @@
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
-    "@capacitor/android": "^8.5.3",
-    "@capacitor/cli": "^8.5.3",
-    "@capacitor/core": "^8.5.3",
     "@ghost-js/cli": "1.0.2",
     "@ghost-js/core": "1.0.0",
     "@ghost-js/database": "1.0.0",
     "@ghost-js/events": "1.0.0",
     "@ghost-js/paradigms": "1.0.0",
-    "@ghost-js/router": "1.0.0"
+    "@ghost-js/router": "1.0.0",
+    "@specter-bridge/core": "^0.1.0"
   },
   "scripts": {
     "dev": "ghost dev",
